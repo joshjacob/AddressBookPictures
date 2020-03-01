@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB07DBFB1586E32E00AA7FD1 /* ABPLDAPCompareEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = CB07DBFA1586E32E00AA7FD1 /* ABPLDAPCompareEntry.m */; };
+		CB13A98916E9899C00E39E1B /* CHANGES.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB13A98816E9899C00E39E1B /* CHANGES.txt */; };
+		CB168CC91526AB7100AE8A5A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB168CC81526AB7100AE8A5A /* Cocoa.framework */; };
+		CB168CD31526AB7100AE8A5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB168CD11526AB7100AE8A5A /* InfoPlist.strings */; };
+		CB168CD51526AB7100AE8A5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB168CD41526AB7100AE8A5A /* main.m */; };
+		CB168CD91526AB7100AE8A5A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CB168CD71526AB7100AE8A5A /* Credits.rtf */; };
+		CB168CDC1526AB7100AE8A5A /* ABPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB168CDB1526AB7100AE8A5A /* ABPAppDelegate.m */; };
+		CB168CDF1526AB7200AE8A5A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB168CDD1526AB7200AE8A5A /* MainMenu.xib */; };
+		CB168CE61526AC5B00AE8A5A /* libldap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB168CE51526AC5B00AE8A5A /* libldap.dylib */; };
+		CB2494DB1527A36100A62CA0 /* ABPConfigurationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2494DA1527A36100A62CA0 /* ABPConfigurationWindowController.m */; };
+		CB2494DD1527A38500A62CA0 /* ABPConfigurationWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2494DC1527A38500A62CA0 /* ABPConfigurationWindowController.xib */; };
+		CB320AC716D3EDF600D1CF0B /* BetaTesterNotes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CB320AC516D3EDF600D1CF0B /* BetaTesterNotes.rtf */; };
+		CB320ACC16D46BCB00D1CF0B /* ABPBetaNotesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB320ACA16D46BCB00D1CF0B /* ABPBetaNotesWindowController.m */; };
+		CB320ACD16D46BCB00D1CF0B /* ABPBetaNotesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB320ACB16D46BCB00D1CF0B /* ABPBetaNotesWindowController.xib */; };
+		CB34A16324006CDA008571EF /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD4AB53154F8C4300A6C772 /* NSData+Base64.m */; };
+		CB5C411F18DDEFF0001A4EF9 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5C411E18DDEFF0001A4EF9 /* Media.xcassets */; };
+		CBA2A9F81588404000CA4C87 /* ABPLDAPQueryOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA2A9F71588404000CA4C87 /* ABPLDAPQueryOperation.m */; };
+		CBCD40B515602A7400953B5F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCD40B415602A7400953B5F /* AddressBook.framework */; };
+		CBDFA9C21528015B006848A1 /* ABPLDAPService.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDFA9C11528015B006848A1 /* ABPLDAPService.m */; };
+		CBDFA9CE152804C9006848A1 /* ABPLDAPEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDFA9CD152804C9006848A1 /* ABPLDAPEntry.m */; };
+		CBF2771F152E7ADE00D17740 /* ABPLDAPConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDFA9D0152804F8006848A1 /* ABPLDAPConfiguration.m */; };
+		CBF99C2A1550B57100C084F0 /* ABPCompareWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF99C281550B57100C084F0 /* ABPCompareWindowController.m */; };
+		CBF99C2B1550B57100C084F0 /* ABPCompareWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBF99C291550B57100C084F0 /* ABPCompareWindowController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB07DBF91586E32E00AA7FD1 /* ABPLDAPCompareEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABPLDAPCompareEntry.h; path = LDAP/ABPLDAPCompareEntry.h; sourceTree = "<group>"; };
+		CB07DBFA1586E32E00AA7FD1 /* ABPLDAPCompareEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABPLDAPCompareEntry.m; path = LDAP/ABPLDAPCompareEntry.m; sourceTree = "<group>"; };
+		CB13A98816E9899C00E39E1B /* CHANGES.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES.txt; sourceTree = "<group>"; };
+		CB168CC41526AB7100AE8A5A /* Address Book Pictures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Address Book Pictures.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB168CC81526AB7100AE8A5A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CB168CCB1526AB7100AE8A5A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CB168CCC1526AB7100AE8A5A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CB168CCD1526AB7100AE8A5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CB168CD01526AB7100AE8A5A /* AddressBookPictures-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AddressBookPictures-Info.plist"; sourceTree = "<group>"; };
+		CB168CD21526AB7100AE8A5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB168CD41526AB7100AE8A5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB168CD61526AB7100AE8A5A /* AddressBookPictures-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AddressBookPictures-Prefix.pch"; sourceTree = "<group>"; };
+		CB168CD81526AB7100AE8A5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CB168CDA1526AB7100AE8A5A /* ABPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABPAppDelegate.h; sourceTree = "<group>"; };
+		CB168CDB1526AB7100AE8A5A /* ABPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABPAppDelegate.m; sourceTree = "<group>"; };
+		CB168CE51526AC5B00AE8A5A /* libldap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libldap.dylib; path = usr/lib/libldap.dylib; sourceTree = SDKROOT; };
+		CB2494D91527A36100A62CA0 /* ABPConfigurationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABPConfigurationWindowController.h; path = ConfigurationWindow/ABPConfigurationWindowController.h; sourceTree = "<group>"; };
+		CB2494DA1527A36100A62CA0 /* ABPConfigurationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABPConfigurationWindowController.m; path = ConfigurationWindow/ABPConfigurationWindowController.m; sourceTree = "<group>"; };
+		CB2494DC1527A38500A62CA0 /* ABPConfigurationWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ABPConfigurationWindowController.xib; path = ConfigurationWindow/ABPConfigurationWindowController.xib; sourceTree = "<group>"; };
+		CB320AC616D3EDF600D1CF0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/BetaTesterNotes.rtf; sourceTree = "<group>"; };
+		CB320AC916D46BCB00D1CF0B /* ABPBetaNotesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABPBetaNotesWindowController.h; path = Beta/ABPBetaNotesWindowController.h; sourceTree = "<group>"; };
+		CB320ACA16D46BCB00D1CF0B /* ABPBetaNotesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABPBetaNotesWindowController.m; path = Beta/ABPBetaNotesWindowController.m; sourceTree = "<group>"; };
+		CB320ACB16D46BCB00D1CF0B /* ABPBetaNotesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ABPBetaNotesWindowController.xib; path = Beta/ABPBetaNotesWindowController.xib; sourceTree = "<group>"; };
+		CB34A16424006D6C008571EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CB5C411E18DDEFF0001A4EF9 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		CB5FE4CA16DDB69500DA189A /* AddressBookPictures.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AddressBookPictures.entitlements; sourceTree = "<group>"; };
+		CBA2A9F61588404000CA4C87 /* ABPLDAPQueryOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABPLDAPQueryOperation.h; path = LDAP/ABPLDAPQueryOperation.h; sourceTree = "<group>"; };
+		CBA2A9F71588404000CA4C87 /* ABPLDAPQueryOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABPLDAPQueryOperation.m; path = LDAP/ABPLDAPQueryOperation.m; sourceTree = "<group>"; };
+		CBCD40B415602A7400953B5F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		CBD4AB52154F8C4300A6C772 /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "ThirdParty/NSData+Base64/NSData+Base64.h"; sourceTree = "<group>"; };
+		CBD4AB53154F8C4300A6C772 /* NSData+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "ThirdParty/NSData+Base64/NSData+Base64.m"; sourceTree = "<group>"; };
+		CBDFA9C01528015B006848A1 /* ABPLDAPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABPLDAPService.h; path = LDAP/ABPLDAPService.h; sourceTree = "<group>"; };
+		CBDFA9C11528015B006848A1 /* ABPLDAPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABPLDAPService.m; path = LDAP/ABPLDAPService.m; sourceTree = "<group>"; };
+		CBDFA9CC152804C9006848A1 /* ABPLDAPEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABPLDAPEntry.h; path = LDAP/ABPLDAPEntry.h; sourceTree = "<group>"; };
+		CBDFA9CD152804C9006848A1 /* ABPLDAPEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABPLDAPEntry.m; path = LDAP/ABPLDAPEntry.m; sourceTree = "<group>"; };
+		CBDFA9CF152804F8006848A1 /* ABPLDAPConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ABPLDAPConfiguration.h; path = LDAP/ABPLDAPConfiguration.h; sourceTree = "<group>"; };
+		CBDFA9D0152804F8006848A1 /* ABPLDAPConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ABPLDAPConfiguration.m; path = LDAP/ABPLDAPConfiguration.m; sourceTree = "<group>"; };
+		CBF99C271550B57100C084F0 /* ABPCompareWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABPCompareWindowController.h; path = CompareWindow/ABPCompareWindowController.h; sourceTree = "<group>"; };
+		CBF99C281550B57100C084F0 /* ABPCompareWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABPCompareWindowController.m; path = CompareWindow/ABPCompareWindowController.m; sourceTree = "<group>"; };
+		CBF99C291550B57100C084F0 /* ABPCompareWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ABPCompareWindowController.xib; path = CompareWindow/ABPCompareWindowController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB168CC11526AB7100AE8A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCD40B515602A7400953B5F /* AddressBook.framework in Frameworks */,
+				CB168CE61526AC5B00AE8A5A /* libldap.dylib in Frameworks */,
+				CB168CC91526AB7100AE8A5A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB168CB91526AB7100AE8A5A = {
+			isa = PBXGroup;
+			children = (
+				CB168CCE1526AB7100AE8A5A /* AddressBookPictures */,
+				CB168CC71526AB7100AE8A5A /* Frameworks */,
+				CB168CC51526AB7100AE8A5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB168CC51526AB7100AE8A5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB168CC41526AB7100AE8A5A /* Address Book Pictures.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB168CC71526AB7100AE8A5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBCD40B415602A7400953B5F /* AddressBook.framework */,
+				CB168CE51526AC5B00AE8A5A /* libldap.dylib */,
+				CB168CC81526AB7100AE8A5A /* Cocoa.framework */,
+				CB168CCA1526AB7100AE8A5A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB168CCA1526AB7100AE8A5A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB168CCB1526AB7100AE8A5A /* AppKit.framework */,
+				CB168CCC1526AB7100AE8A5A /* CoreData.framework */,
+				CB168CCD1526AB7100AE8A5A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CB168CCE1526AB7100AE8A5A /* AddressBookPictures */ = {
+			isa = PBXGroup;
+			children = (
+				CB5FE4CA16DDB69500DA189A /* AddressBookPictures.entitlements */,
+				CBDFA9BE1528003C006848A1 /* LDAP */,
+				CB2494D31527A2F000A62CA0 /* ConfigurationWindow */,
+				CBF99C251550B50400C084F0 /* CompareWindow */,
+				CB168CDA1526AB7100AE8A5A /* ABPAppDelegate.h */,
+				CB168CDB1526AB7100AE8A5A /* ABPAppDelegate.m */,
+				CB168CDD1526AB7200AE8A5A /* MainMenu.xib */,
+				CB320AC816D46B9700D1CF0B /* Beta */,
+				CBD4AB50154F8C2800A6C772 /* ThirdParty */,
+				CB168CCF1526AB7100AE8A5A /* Supporting Files */,
+			);
+			path = AddressBookPictures;
+			sourceTree = "<group>";
+		};
+		CB168CCF1526AB7100AE8A5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB168CD01526AB7100AE8A5A /* AddressBookPictures-Info.plist */,
+				CB168CD11526AB7100AE8A5A /* InfoPlist.strings */,
+				CB168CD41526AB7100AE8A5A /* main.m */,
+				CB168CD61526AB7100AE8A5A /* AddressBookPictures-Prefix.pch */,
+				CB168CD71526AB7100AE8A5A /* Credits.rtf */,
+				CB320AC516D3EDF600D1CF0B /* BetaTesterNotes.rtf */,
+				CB13A98816E9899C00E39E1B /* CHANGES.txt */,
+				CB5C411E18DDEFF0001A4EF9 /* Media.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB2494D31527A2F000A62CA0 /* ConfigurationWindow */ = {
+			isa = PBXGroup;
+			children = (
+				CB2494D91527A36100A62CA0 /* ABPConfigurationWindowController.h */,
+				CB2494DA1527A36100A62CA0 /* ABPConfigurationWindowController.m */,
+				CB2494DC1527A38500A62CA0 /* ABPConfigurationWindowController.xib */,
+			);
+			name = ConfigurationWindow;
+			sourceTree = "<group>";
+		};
+		CB320AC816D46B9700D1CF0B /* Beta */ = {
+			isa = PBXGroup;
+			children = (
+				CB320AC916D46BCB00D1CF0B /* ABPBetaNotesWindowController.h */,
+				CB320ACA16D46BCB00D1CF0B /* ABPBetaNotesWindowController.m */,
+				CB320ACB16D46BCB00D1CF0B /* ABPBetaNotesWindowController.xib */,
+			);
+			name = Beta;
+			sourceTree = "<group>";
+		};
+		CBD4AB50154F8C2800A6C772 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				CBD4AB52154F8C4300A6C772 /* NSData+Base64.h */,
+				CBD4AB53154F8C4300A6C772 /* NSData+Base64.m */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		CBDFA9BE1528003C006848A1 /* LDAP */ = {
+			isa = PBXGroup;
+			children = (
+				CBDFA9CF152804F8006848A1 /* ABPLDAPConfiguration.h */,
+				CBDFA9D0152804F8006848A1 /* ABPLDAPConfiguration.m */,
+				CBDFA9C01528015B006848A1 /* ABPLDAPService.h */,
+				CBDFA9C11528015B006848A1 /* ABPLDAPService.m */,
+				CBDFA9CC152804C9006848A1 /* ABPLDAPEntry.h */,
+				CBDFA9CD152804C9006848A1 /* ABPLDAPEntry.m */,
+				CB07DBF91586E32E00AA7FD1 /* ABPLDAPCompareEntry.h */,
+				CB07DBFA1586E32E00AA7FD1 /* ABPLDAPCompareEntry.m */,
+				CBA2A9F61588404000CA4C87 /* ABPLDAPQueryOperation.h */,
+				CBA2A9F71588404000CA4C87 /* ABPLDAPQueryOperation.m */,
+			);
+			name = LDAP;
+			sourceTree = "<group>";
+		};
+		CBF99C251550B50400C084F0 /* CompareWindow */ = {
+			isa = PBXGroup;
+			children = (
+				CBF99C271550B57100C084F0 /* ABPCompareWindowController.h */,
+				CBF99C281550B57100C084F0 /* ABPCompareWindowController.m */,
+				CBF99C291550B57100C084F0 /* ABPCompareWindowController.xib */,
+			);
+			name = CompareWindow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB168CC31526AB7100AE8A5A /* Address Book Pictures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB168CE21526AB7200AE8A5A /* Build configuration list for PBXNativeTarget "Address Book Pictures" */;
+			buildPhases = (
+				CB168CC01526AB7100AE8A5A /* Sources */,
+				CB168CC11526AB7100AE8A5A /* Frameworks */,
+				CB168CC21526AB7100AE8A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Address Book Pictures";
+			productName = AddressBookPictures;
+			productReference = CB168CC41526AB7100AE8A5A /* Address Book Pictures.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB168CBB1526AB7100AE8A5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ABP;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Josh Jacob";
+				TargetAttributes = {
+					CB168CC31526AB7100AE8A5A = {
+						DevelopmentTeam = 2P5CH9925X;
+					};
+				};
+			};
+			buildConfigurationList = CB168CBE1526AB7100AE8A5A /* Build configuration list for PBXProject "AddressBookPictures" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB168CB91526AB7100AE8A5A;
+			productRefGroup = CB168CC51526AB7100AE8A5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB168CC31526AB7100AE8A5A /* Address Book Pictures */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB168CC21526AB7100AE8A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB168CD31526AB7100AE8A5A /* InfoPlist.strings in Resources */,
+				CB168CD91526AB7100AE8A5A /* Credits.rtf in Resources */,
+				CB168CDF1526AB7200AE8A5A /* MainMenu.xib in Resources */,
+				CB2494DD1527A38500A62CA0 /* ABPConfigurationWindowController.xib in Resources */,
+				CBF99C2B1550B57100C084F0 /* ABPCompareWindowController.xib in Resources */,
+				CB320AC716D3EDF600D1CF0B /* BetaTesterNotes.rtf in Resources */,
+				CB320ACD16D46BCB00D1CF0B /* ABPBetaNotesWindowController.xib in Resources */,
+				CB5C411F18DDEFF0001A4EF9 /* Media.xcassets in Resources */,
+				CB13A98916E9899C00E39E1B /* CHANGES.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB168CC01526AB7100AE8A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB168CD51526AB7100AE8A5A /* main.m in Sources */,
+				CB168CDC1526AB7100AE8A5A /* ABPAppDelegate.m in Sources */,
+				CB2494DB1527A36100A62CA0 /* ABPConfigurationWindowController.m in Sources */,
+				CB34A16324006CDA008571EF /* NSData+Base64.m in Sources */,
+				CBDFA9C21528015B006848A1 /* ABPLDAPService.m in Sources */,
+				CBDFA9CE152804C9006848A1 /* ABPLDAPEntry.m in Sources */,
+				CBF2771F152E7ADE00D17740 /* ABPLDAPConfiguration.m in Sources */,
+				CBF99C2A1550B57100C084F0 /* ABPCompareWindowController.m in Sources */,
+				CB07DBFB1586E32E00AA7FD1 /* ABPLDAPCompareEntry.m in Sources */,
+				CBA2A9F81588404000CA4C87 /* ABPLDAPQueryOperation.m in Sources */,
+				CB320ACC16D46BCB00D1CF0B /* ABPBetaNotesWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB168CD11526AB7100AE8A5A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB168CD21526AB7100AE8A5A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CB168CD71526AB7100AE8A5A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB168CD81526AB7100AE8A5A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CB168CDD1526AB7200AE8A5A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB34A16424006D6C008571EF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		CB320AC516D3EDF600D1CF0B /* BetaTesterNotes.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB320AC616D3EDF600D1CF0B /* en */,
+			);
+			name = BetaTesterNotes.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB168CE01526AB7200AE8A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CB168CE11526AB7200AE8A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CB168CE31526AB7200AE8A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AddressBookPictures/AddressBookPictures.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2P5CH9925X;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AddressBookPictures/AddressBookPictures-Prefix.pch";
+				INFOPLIST_FILE = "AddressBookPictures/AddressBookPictures-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshjacob.AddressBookPictures;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CB168CE41526AB7200AE8A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AddressBookPictures/AddressBookPictures.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2P5CH9925X;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AddressBookPictures/AddressBookPictures-Prefix.pch";
+				INFOPLIST_FILE = "AddressBookPictures/AddressBookPictures-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshjacob.AddressBookPictures;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB168CBE1526AB7100AE8A5A /* Build configuration list for PBXProject "AddressBookPictures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB168CE01526AB7200AE8A5A /* Debug */,
+				CB168CE11526AB7200AE8A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB168CE21526AB7200AE8A5A /* Build configuration list for PBXNativeTarget "Address Book Pictures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB168CE31526AB7200AE8A5A /* Debug */,
+				CB168CE41526AB7200AE8A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB168CBB1526AB7100AE8A5A /* Project object */;
+}

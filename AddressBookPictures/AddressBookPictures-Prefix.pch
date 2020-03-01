@@ -1,0 +1,27 @@
+//
+// Prefix header for all source files of the 'AddressBookPictures' target in the 'AddressBookPictures' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import "NSData+Base64.h"
+#endif
+
+//
+// http://iphoneincubator.com/blog/debugging/the-evolution-of-a-replacement-for-nslog
+//
+// DLog is almost a drop-in replacement for NSLog
+// DLog();
+// DLog(@&quot;here&quot;);
+// DLog(@&quot;value: %d&quot;, x);
+// Unfortunately this doesn't work DLog(aStringVariable); you have to do this instead DLog(@&quot;%@&quot;, aStringVariable);
+#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define DLog(...)
+#endif
+
+// ALog always displays output regardless of the DEBUG setting
+#define ALog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+
+

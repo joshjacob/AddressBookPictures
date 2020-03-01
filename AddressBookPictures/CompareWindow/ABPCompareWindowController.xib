@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15400" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15400"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ABPCompareWindowController">
+            <connections>
+                <outlet property="arrayController" destination="22" id="37"/>
+                <outlet property="buttonSync" destination="90" id="148"/>
+                <outlet property="connectionSheet" destination="126" id="141"/>
+                <outlet property="connectionSheetCancel" destination="132" id="144"/>
+                <outlet property="connectionSheetProgress" destination="130" id="142"/>
+                <outlet property="tableView" destination="6" id="36"/>
+                <outlet property="window" destination="1" id="3"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <arrayController id="22"/>
+        <window title="Compare" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="654" height="497"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1057"/>
+            <value key="minSize" type="size" width="600" height="400"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="654" height="497"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView autohidesScrollers="YES" horizontalLineScroll="52" horizontalPageScroll="10" verticalLineScroll="52" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5">
+                        <rect key="frame" x="20" y="61" width="614" height="416"/>
+                        <clipView key="contentView" id="IBs-G8-gmr">
+                            <rect key="frame" x="1" y="0.0" width="612" height="415"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="50" headerView="8" id="6">
+                                    <rect key="frame" x="0.0" y="0.0" width="612" height="390"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <size key="intercellSpacing" width="3" height="2"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                    <tableColumns>
+                                        <tableColumn editable="NO" width="200" minWidth="40" maxWidth="1000" id="26">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Name">
+                                                <font key="font" metaFont="menu" size="11"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="27">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="22" name="value" keyPath="arrangedObjects.ldapEntry.name" id="149">
+                                                    <dictionary key="options">
+                                                        <integer key="NSConditionallySetsEditable" value="1"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </tableColumn>
+                                        <tableColumn width="100" minWidth="100" maxWidth="100" id="28">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Action">
+                                                <font key="font" metaFont="menu" size="11"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableHeaderCell>
+                                            <popUpButtonCell key="dataCell" type="bevel" title="Skip" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="bezel" imageScaling="proportionallyDown" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="67" id="65">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <menu key="menu" title="OtherViews" id="66">
+                                                    <items>
+                                                        <menuItem title="Skip" state="on" id="67">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
+                                                        <menuItem title="Update" tag="1" id="69">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="22" name="selectedIndex" keyPath="arrangedObjects.action" id="73"/>
+                                            </connections>
+                                        </tableColumn>
+                                        <tableColumn editable="NO" width="100" minWidth="50" maxWidth="100" id="10">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="LDAP">
+                                                <font key="font" metaFont="menu" size="11"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableHeaderCell>
+                                            <imageCell key="dataCell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="38"/>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="22" name="value" keyPath="arrangedObjects.ldapEntry.thumbnailPhoto" id="55"/>
+                                            </connections>
+                                        </tableColumn>
+                                        <tableColumn editable="NO" width="100" minWidth="50" maxWidth="100" id="30">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Address Book">
+                                                <font key="font" metaFont="menu" size="11"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableHeaderCell>
+                                            <imageCell key="dataCell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="45"/>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="22" name="value" keyPath="arrangedObjects.addressBookImage" id="109"/>
+                                            </connections>
+                                        </tableColumn>
+                                    </tableColumns>
+                                    <connections>
+                                        <binding destination="22" name="content" keyPath="arrangedObjects" id="25"/>
+                                    </connections>
+                                </tableView>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="7">
+                            <rect key="frame" x="1" y="441" width="436" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="9">
+                            <rect key="frame" x="224" y="17" width="15" height="102"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <tableHeaderView key="headerView" id="8">
+                            <rect key="frame" x="0.0" y="0.0" width="612" height="25"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </tableHeaderView>
+                    </scrollView>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="78">
+                        <rect key="frame" x="14" y="13" width="85" height="32"/>
+                        <buttonCell key="cell" type="push" title="Skip All" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="79">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="setSkipAll:" target="-2" id="105"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="84">
+                        <rect key="frame" x="99" y="13" width="103" height="32"/>
+                        <buttonCell key="cell" type="push" title="Update All" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="85">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="setUpdateAll:" target="-2" id="106"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="110">
+                        <rect key="frame" x="202" y="13" width="122" height="32"/>
+                        <buttonCell key="cell" type="push" title="Update Blank" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="111">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="setUpdateBlank:" target="-2" id="123"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="90">
+                        <rect key="frame" x="525" y="13" width="115" height="32"/>
+                        <buttonCell key="cell" type="push" title="Synchronize" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="91">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="synchronize:" target="-2" id="107"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5" firstAttribute="top" secondItem="2" secondAttribute="top" constant="20" symbolic="YES" id="74"/>
+                    <constraint firstItem="78" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="82"/>
+                    <constraint firstItem="84" firstAttribute="leading" secondItem="78" secondAttribute="trailing" constant="12" symbolic="YES" id="88"/>
+                    <constraint firstAttribute="bottom" secondItem="90" secondAttribute="bottom" constant="20" symbolic="YES" id="94"/>
+                    <constraint firstAttribute="trailing" secondItem="90" secondAttribute="trailing" constant="20" symbolic="YES" id="99"/>
+                    <constraint firstItem="78" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="20" symbolic="YES" id="100"/>
+                    <constraint firstItem="5" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="101"/>
+                    <constraint firstAttribute="trailing" secondItem="5" secondAttribute="trailing" constant="20" symbolic="YES" id="102"/>
+                    <constraint firstAttribute="bottom" secondItem="84" secondAttribute="bottom" constant="20" symbolic="YES" id="103"/>
+                    <constraint firstAttribute="bottom" secondItem="78" secondAttribute="bottom" constant="20" symbolic="YES" id="104"/>
+                    <constraint firstAttribute="bottom" secondItem="110" secondAttribute="bottom" constant="20" symbolic="YES" id="120"/>
+                    <constraint firstItem="110" firstAttribute="leading" secondItem="84" secondAttribute="trailing" constant="12" symbolic="YES" id="121"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="4"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="148"/>
+        </window>
+        <popUpButtonCell type="bevel" title="Pop Up" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="bezel" imageScaling="proportionallyDown" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="61" id="59">
+            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+            <font key="font" metaFont="menu" size="11"/>
+            <menu key="menu" title="OtherViews" id="60">
+                <items>
+                    <menuItem title="Pop Up" state="on" id="61"/>
+                </items>
+            </menu>
+        </popUpButtonCell>
+        <popUpButtonCell type="bevel" title="Pop Up" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="bezel" imageScaling="proportionallyDown" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="64" id="62">
+            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+            <font key="font" metaFont="menu" size="11"/>
+            <menu key="menu" title="OtherViews" id="63">
+                <items>
+                    <menuItem title="Pop Up" state="on" id="64"/>
+                </items>
+            </menu>
+        </popUpButtonCell>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" visibleAtLaunch="NO" animationBehavior="default" id="126" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="132" width="410" height="81"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1057"/>
+            <view key="contentView" id="127">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="129">
+                        <rect key="frame" x="18" y="45" width="374" height="16"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Connecting with LDAP server..." id="131">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="self.op.statusString" id="147"/>
+                        </connections>
+                    </textField>
+                    <progressIndicator wantsLayer="YES" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="130">
+                        <rect key="frame" x="20" y="19" width="292" height="20"/>
+                    </progressIndicator>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="128">
+                        <rect key="frame" x="314" y="12" width="82" height="32"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="132">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelConnection:" target="-2" id="143"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="130" secondAttribute="bottom" constant="20" symbolic="YES" id="133"/>
+                    <constraint firstItem="129" firstAttribute="leading" secondItem="127" secondAttribute="leading" constant="20" symbolic="YES" id="134"/>
+                    <constraint firstItem="130" firstAttribute="leading" secondItem="127" secondAttribute="leading" constant="20" symbolic="YES" id="135"/>
+                    <constraint firstItem="128" firstAttribute="centerY" secondItem="130" secondAttribute="centerY" id="136"/>
+                    <constraint firstItem="128" firstAttribute="leading" secondItem="130" secondAttribute="trailing" constant="8" symbolic="YES" id="137"/>
+                    <constraint firstAttribute="trailing" secondItem="129" secondAttribute="trailing" constant="20" symbolic="YES" id="138"/>
+                    <constraint firstItem="129" firstAttribute="top" secondItem="127" secondAttribute="top" constant="20" symbolic="YES" id="139"/>
+                    <constraint firstAttribute="trailing" secondItem="128" secondAttribute="trailing" constant="20" symbolic="YES" id="140"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="141" y="532"/>
+        </window>
+        <menuItem title="Pop Up" id="68"/>
+    </objects>
+</document>

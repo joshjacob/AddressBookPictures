@@ -1,0 +1,6 @@
+0.9b3
+=====
+
++ Name of user in tables will fall back from displayName to givenName+sn or just givenName.
++ Will look for photo as either thumbnailPhoto, jpegPhoto or photo LDAP attribute.
++ Fixed pre-10.8 bug.
